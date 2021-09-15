@@ -1,0 +1,26 @@
+models:
+
+  Product:
+    category_id: id foreign:categories
+    subcategory_id: id foreign:subcategories
+    subsubcategory_id: id foreign:subsubcategories
+    product_name: string:191
+    product_slug: string:191
+    product_code: decimal:8,2
+    product_qty: decimal:8,2
+    product_tag: string:191
+    product_size: string:191 nullable
+    product_color: string:191
+    selling_price: decimal:8,2
+    discount_price: decimal:8,2 nullable
+    short_descp: longtext
+    long_descp: longtext
+    product_thambnail: longtext
+    hot_deals: string:191 nullable
+    featured: string:191 nullable
+    special_offer: string:191 nullable
+    special_deals: string:191 nullable
+    status: decimal:8,2 default(0)
+    published_at: nullable timestamp
+
+
